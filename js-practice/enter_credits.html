@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollment</title>
+</head>
+
+<body>
+    <!-- HTML here -->
+    <div>
+        <div>
+            <label for="credit-count">How many credits are you taking this semester?</label>
+        </div>
+
+        <input type="number" name="credits" id="credit-count">
+
+        <button id="enter-credits">Enter</button>
+    </div>
+
+    <div>
+        <p id="status-message"></p>
+    </div>
+
+
+    <!-- JavaScript here -->
+    <script>
+        // get the enter button element from the document/webpage
+        let enterButton = document.querySelector('#enter-credits');
+
+        // get the input number box element from the document/webpage
+        let creditsInput = document.querySelector('#credit-count');
+
+        // get the enrollment message para element from the document/webpage
+        let statusMessage = document.querySelector('#status-message');
+
+        // FIREFOX DEBUG: create a variable for empty string
+        // JavaScript thinks 0 equals empty string
+        // set initial empty string value to false
+        let isEmptyString = false;
+
+        // add a click event listener to the enter button
+        enterButton.addEventListener('click', function () {
+            // get the number value from the number input box (input will be string format)
+            let credits = creditsInput.value;
+            console.log(credits);
+
+            // Cure Firefox bug of empty string/non-numerical characters with input type number
+            // JS thinks empty string equals to 0
+            // JS reads non-numerical characters as an empty string when input is number type
+            // In firefox/explorer input number type box allows non-numerical characters
+            if (credits === '') {
+                console.log('Not a number: ' + credits);
+
+                // This is an empty string: set isEmptyString to true
+                isEmptyString = true;
+            }
+
+            // Form validation
+            if (isEmptyString) {
+                statusMessage.innerHTML = 'Error: empty input/non-numerical characters entered'
+            }
+            else if (credits > 24) {
+                statusMessage.innerHTML = 'Error: enter 24 or less credits';
+            }
+            else if (credits >= 12) {
+                statusMessage.innerHTML = 'You are enrolled as a full-time student';
+            }
+            else if (credits >= 6) {
+                statusMessage.innerHTML = 'You are enrolled as a half-time student';
+            }
+            else if (credits >= 0) {
+                statusMessage.innerHTML = 'You are enrolled less that half-time';
+            }
+            else {
+                statusMessage.innerHTML = 'Error: enter 0 or a positive number';
+            }
+
+            isEmptyString = false;      // reset isEmptyString to back to false
+        });
+    </script>
+
+    <!-- 
+        NOTE: Mozilla Firefox allows non-numerical characters in the input "number" type.
+        & regards these characters as an empty string.
+    -->
+</body>
+
+</html>
