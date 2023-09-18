@@ -1,192 +1,323 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSON</title>
-
     <style>
-        .mono { font-family: 'Courier New', Courier, monospace; }
+      .mono {
+        font-family: "Courier New", Courier, monospace;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1>Week 5 Labs: JavaScript Introduction - JSON</h1>
 
-    <hr>
+    <hr />
 
     <ul>
-        <li>
-            JavaScript Practice
+      <li>
+        JavaScript Practice
+        <ul>
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/hello.js"
+              target="_blank"
+            >
+              Hello JS
+            </a>
+            : Basics
+          </li>
+
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/variables.js"
+              target="_blank"
+            >
+              Variables
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/strings.js"
+              target="_blank"
+            >
+              Strings
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/conditions.js"
+              target="_blank"
+            >
+              Conditions
+            </a>
+            : if, if-else, if-else-if
+
             <ul>
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/hello.js"
-                        target="_blank">Hello JS</a>: Basics
-                </li>
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/enter_name.html"
+                  target="_blank"
+                >
+                  Enter name
+                </a>
+              </li>
 
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/variables.js"
-                        target="_blank">Variables</a>
-                </li>
-
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/strings.js"
-                        target="_blank">Strings</a>
-                </li>
-
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/conditions.js"
-                        target="_blank">Conditions</a>: if, if-else, if-else-if
-
-                    <ul>
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/enter_name.html"
-                                target="_blank">Enter name</a>
-                        </li>
-
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/enter_credits.html"
-                                target="_blank">Enter credits</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/loops.js"
-                        target="_blank">Loops</a>: <span class='mono'>for</span> and <span class='mono'>forEach()</span>
-                </li>
-
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/arrays.js"
-                        target="_blank">Arrays</a>
-                </li>
-
-                <li>
-                    Functions
-                    <ul>
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/functions.js"
-                                target="_blank">Functions</a>: basics
-                        </li>
-
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/temp_converter.js"
-                                target="_blank">Temperature converter</a>
-                        </li>
-
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/gpa.js"
-                                target="_blank">GPA</a>
-                        </li>
-
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/zip.js"
-                                target="_blank">Minnesota ZIP</a>
-                        </li>
-
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/city_state_address.js"
-                                target="_blank">Joining City & State</a>
-                        </li>
-                    </ul>
-                </li>
-
-                <li>
-                    JS Maps, Filter & Spread (...) Operator
-                    <ul>
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/map_filter_starter_file.js"
-                                target="_blank">Template</a>: starter file
-                        </li>
-
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/map_filter.js"
-                                target="_blank">Practice</a>
-                        </li>
-                    </ul>
-                </li>
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/enter_credits.html"
+                  target="_blank"
+                >
+                  Enter credits
+                </a>
+              </li>
             </ul>
-        </li><br>
+          </li>
 
-        <li>
-            Lab 5 - Form Errors: Minnesota Tree Order Form Lab
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/loops.js"
+              target="_blank"
+            >
+              Loops
+            </a>
+            : <span class="mono">for</span> and
+            <span class="mono">forEach()</span>
+          </li>
+
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/arrays.js"
+              target="_blank"
+            >
+              Arrays
+            </a>
+          </li>
+
+          <li>
+            Functions
             <ul>
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/form-errors/tree_order_form_lab_template.html"
-                        target="_blank">Template</a>: starter file
-                </li>
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/functions.js"
+                  target="_blank"
+                >
+                  Functions
+                </a>
+                : basics
+              </li>
 
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/form-errors/tree.html"
-                        target="_blank">Form validations</a>: lab practice
-                </li>
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/temp_converter.js"
+                  target="_blank"
+                >
+                  Temperature converter
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/gpa.js"
+                  target="_blank"
+                >
+                  GPA
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/zip.js"
+                  target="_blank"
+                >
+                  Minnesota ZIP
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/functions/city_state_address.js"
+                  target="_blank"
+                >
+                  Joining City & State
+                </a>
+              </li>
             </ul>
-        </li><br>
+          </li>
 
-        <li>
-            JSON Objects
+          <li>
+            JS Maps, Filter & Spread (...) Operator
             <ul>
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/first_objects.js"
-                        target="_blank">First objects</a>
-                </li>
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/map_filter_starter_file.js"
+                  target="_blank"
+                >
+                  Template
+                </a>
+                : starter file
+              </li>
 
-                <li>
-                    <a href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/nested_objects.js"
-                        target="_blank">Nested objects</a>
-                </li>
-
-                <li>
-                    Examples: objects
-                    <ul>
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/roles.js"
-                                target="_blank">Employee roles</a>
-                        </li>
-
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/weather.js"
-                                target="_blank">Weather</a>
-                        </li>
-
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/github.js"
-                                target="_blank">Github</a>
-                        </li>
-                    </ul>
-                </li><br>
-
-                <li>
-                    Lab 5 - Arrays & Objects: JSON
-                    <ul>
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/arrays_and_objects_starter_file.js"
-                                target="_blank">Template</a>: starter file
-                        </li>
-
-                        <li>
-                            <a href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/arrays_and_objects.js"
-                                target="_blank">JSON Practice</a>: ISS, Exchange rates, Cats & owners, and Nobel prizes
-                        </li>
-                    </ul>
-                </li><br>
-				
-				<li>
-					<a href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/flowers-json/index.html"
-                        target="_blank">Flowers JSON</a>: page built with JSON with like/dislike features
-				</li>
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/js-practice/map_filter.js"
+                  target="_blank"
+                >
+                  Practice
+                </a>
+              </li>
             </ul>
-        </li><br>
+          </li>
+        </ul>
+      </li>
+      <br />
+
+      <li>
+        Lab 5 - Form Errors: Minnesota Tree Order Form Lab
+        <ul>
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/form-errors/tree_order_form_lab_template.html"
+              target="_blank"
+            >
+              Template
+            </a>
+            : starter file
+          </li>
+
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/form-errors/tree.html"
+              target="_blank"
+            >
+              Form validations
+            </a>
+            : lab practice
+          </li>
+        </ul>
+      </li>
+      <br />
+
+      <li>
+        JSON Objects
+        <ul>
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/first_objects.js"
+              target="_blank"
+            >
+              First objects
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/nested_objects.js"
+              target="_blank"
+            >
+              Nested objects
+            </a>
+          </li>
+
+          <li>
+            Examples: objects
+            <ul>
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/roles.js"
+                  target="_blank"
+                >
+                  Employee roles
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/weather.js"
+                  target="_blank"
+                >
+                  Weather
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/github.js"
+                  target="_blank"
+                >
+                  Github
+                </a>
+              </li>
+            </ul>
+          </li>
+          <br />
+
+          <li>
+            Lab 5 - Arrays & Objects: JSON
+            <ul>
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/arrays_and_objects_starter_file.js"
+                  target="_blank"
+                >
+                  Template
+                </a>
+                : starter file
+              </li>
+
+              <li>
+                <a
+                  href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/arrays_and_objects.js"
+                  target="_blank"
+                >
+                  JSON Practice
+                </a>
+                : ISS, Exchange rates, Cats & owners, and Nobel prizes
+              </li>
+            </ul>
+          </li>
+          <br />
+
+          <li>
+            <a
+              href="https://myverdict.github.io/week5-web-programming-javascript/json-objects/flowers-json/index.html"
+              target="_blank"
+            >
+              Flowers JSON
+            </a>
+            : page built with JSON with like/dislike features
+          </li>
+        </ul>
+      </li>
+      <br />
+
+      <li>
+        Also see,
+        <a
+          href="https://github.com/myverdict/ITEC-lab5-assignment"
+          target="_blank"
+        >
+          Lab 5 assignment repository
+        </a>
+      </li>
     </ul>
 
-    <hr>
+    <hr />
 
     <p>
-        ITEC 2560-60: Web Client and Server Programming<br>
-        Minneapolis Community and Technical College (MCTC), Minneapolis, Minnesota<br>
+      <i>
+        ITEC 2560-60: Web Client and Server Programming
+        <br />
+        Minneapolis Community and Technical College (MCTC), Minneapolis, Minnesota
+        <br />
         Prof. Clara James, Fall 2020
+        <br />
+        August 25, 2020 to December 15, 2020 (Tuesdays)
+      </i>
     </p>
-</body>
-
+  </body>
 </html>

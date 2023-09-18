@@ -5,13 +5,13 @@
  * @return {string} concatenated string of city & state
  */
 function cityStateAddress(city, state) {
-    // let address = city + ", " + state.toUpperCase();    // wi --> WI
-    // alternate way of writing the above code using template string
-    let address = `${city}, ${state.toUpperCase()}`;        
-    return address;
+  // let address = city + ", " + state.toUpperCase();    // wi --> WI
+  // alternate way of writing the above code using template string
+  let address = `${city}, ${state.toUpperCase()}`;
+  return address;
 }
 
-console.log(cityStateAddress('Minneapolis', 'mn'));     // Minneapolis, MN
+console.log(cityStateAddress("Minneapolis", "mn")); // Minneapolis, MN
 
-let address = cityStateAddress('Seattle', 'WA');        
-console.log(address);                                   // Seattle, WA
+let address = cityStateAddress("Seattle", "WA");
+console.log(address); // Seattle, WA

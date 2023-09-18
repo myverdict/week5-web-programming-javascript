@@ -5,34 +5,28 @@
  */
 // VERSION 1 - if-else clause
 // function validGPA(gpa) {
-//     if (gpa >= 0 && gpa <= 4)
-//     {
-//         return true;        // end of function
-//     }
-//     else
-//     {
-//         return false;       // or end of function
-//     }
+//   if (gpa >= 0 && gpa <= 4) {
+//     return true; // end of function
+//   } else {
+//     return false; // or end of function
+//   }
 // }
-
 
 // VERSION 2 - only if clause
 // function validGPA(gpa) {
-//     if (gpa >= 0 && gpa <= 4)
-//     {
-//         return true;        // end of function
-//     }
-//     return false;           // or end of function
+//   if (gpa >= 0 && gpa <= 4) {
+//     return true; // end of function
+//   }
+//   return false; // or end of function
 // }
-
 
 // VERSION 3 - concise version without if or if-else clause
 function validGPA(gpa) {
-    return gpa >= 0 && gpa <= 4;
+  return gpa >= 0 && gpa <= 4;
 }
 
 // function call
-console.log(validGPA(-3));        // false
-console.log(validGPA(4.1));       // false
-console.log(validGPA(2.5));       // true
-console.log(validGPA(4));         // true
+console.log(validGPA(-3)); // false
+console.log(validGPA(4.1)); // false
+console.log(validGPA(2.5)); // true
+console.log(validGPA(4)); // true

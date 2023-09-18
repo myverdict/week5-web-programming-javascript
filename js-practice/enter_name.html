@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Enter name</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- HTML here -->
     <div>
-        <div>
-            <label for="username">Please enter your name here: </label>
-        </div>
+      <div>
+        <label for="username">Please enter your name here: </label>
+      </div>
 
-        <input type="text" name="username" id="username">
-        <button id="save-username">Save</button>
+      <input type="text" name="username" id="username" />
+      <button id="save-username">Save</button>
     </div>
 
     <div>
-        <p id="welcome-message"></p>
+      <p id="welcome-message"></p>
     </div>
-
 
     <!-- JavaScript here -->
     <script>
-        // STEP 1: find input, button & message para references on the document
-        const nameInput = document.querySelector('#username');
-        let saveButton = document.querySelector('#save-username');
-        let welcomeMessage = document.querySelector('#welcome-message');
+      // STEP 1: find input, button & message para references on the document
+      const nameInput = document.querySelector("#username");
+      let saveButton = document.querySelector("#save-username");
+      let welcomeMessage = document.querySelector("#welcome-message");
 
-        // STEP 2: add a click event listener to the save button
-        saveButton.addEventListener('click', function () {
-            // get the input 'value' from the 'nameInput' element & trim white spaces
-            let nameValue = nameInput.value.trim();
+      // STEP 2: add a click event listener to the save button
+      saveButton.addEventListener("click", function () {
+        // get the input 'value' from the 'nameInput' element & trim white spaces
+        let nameValue = nameInput.value.trim();
 
-            // ERROR: Uncaught TypeError: invalid assignment to const 'nameInput'
-            // if let was used above, then JS would not error, therefore use const.
-            // nameInput = name.trim();      
+        // ERROR: Uncaught TypeError: invalid assignment to const 'nameInput'
+        // if let was used above, then JS would not error, therefore use const.
+        // nameInput = name.trim();
 
-            // Form validation: name should be at least 2 characters long
-            if (nameValue.length < 2) {
-                welcomeMessage.innerHTML = 'Please enter at least 2 characters.';
-            }
-            else {
-                welcomeMessage.innerHTML = `Welcome ${nameValue}!`;
-            }
+        // Form validation: name should be at least 2 characters long
+        if (nameValue.length < 2) {
+          welcomeMessage.innerHTML = "Please enter at least 2 characters.";
+        } else {
+          welcomeMessage.innerHTML = `Welcome ${nameValue}!`;
+        }
 
-            nameInput.value = '';       // clear the 'nameInput' box element
-        })
+        nameInput.value = ""; // clear the 'nameInput' box element
+      });
     </script>
-</body>
-
+  </body>
 </html>
