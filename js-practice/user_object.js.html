@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>JS Objects</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        let webClass = { name: 'Web client server', code: 2560, room: 'T.3050'}
+      </div>
+      <br />
+      <div>let className = webClass.name</div>
+      <div>let classNameAgain = webClass['name']</div>
+      <br />
+      <div>webClass.room = 'T.3080'</div>
+      <br />
+      <div>console.log(webClass)</div>
+      <br />
+      <div>webClass.studentsEnrolled = 27</div>
+      <br />
+      <div>console.log(webClass)</div>
+      <br />
+      <div>// Create a user object</div>
+      <div>// it has the attribute name with the value 'clara;</div>
+      <div>// it also has an attribute password with the value 'qwerty'</div>
+      <div>let user = { username: 'clara', password: 'qwerty' }</div>
+      <div>console.log(user.username)</div>
+      <div>// TODO can you print your FAKE password?</div>
+      <br />
+      <div>console.log(user.password)</div>
+      <div>console.log(user['password'])</div>
+      <br />
+      <div>let password = user.password</div>
+      <div>console.log(password)</div>
+      <br />
+      <div>// TODO add your email to your user object</div>
+      <div>user.email = 'clara.james@minneapolis.edu'</div>
+      <div>console.log(user) // TODO print the entire object</div>
+      <br />
+      <div>// What roles would you have in your dream job?</div>
+      <div>let roles = ['Play videogames', 'Drink tea']</div>
+      <br />
+      <div>user.roles = roles</div>
+      <div>console.log(user)</div>
+      <br />
+      <div>// example contact info</div>
+      <div>let contact = { office: 'T.3066', phone: '612-460-1159' }</div>
+      <div>user.contact = contact</div>
+      <div>console.log(user)</div>
+      <br /><br />
+      <div>let stateTrees = {</div>
+      <div>Michigan: 'Eastern White Pine',</div>
+      <div>California: 'Giant Sequoia',</div>
+      <div>Wisconsin: 'Sugar Maple',</div>
+      <div>Minnesota: 'Red Pine'</div>
+      <div>}</div>
+      <br /><br />
+      <div>// One way to loop - the for ... in loop</div>
+      <div>for (let state in stateTrees) {</div>
+      <div>let tree = stateTrees[state] // get the tree for a state</div>
+      <div>
+        console.log(`The state tree of ${state} is ${tree}`) // do something
+        with the info
+      </div>
+      <div>}</div>
+      <br /><br />
+      <div>
+        // Another way to loop - get the entries (attribute-value pairs) from
+        the object
+      </div>
+      <div>let treeEntries = Object.entries(stateTrees)</div>
+      <div>for (let [state, tree] of treeEntries ) {</div>
+      <div>console.log(`The state tree of ${state} is ${tree}`)</div>
+      <div>}</div>
+      <br />
+      <div></div>
+      <div>// Everything still works with nested values</div>
+      <br />
+      <div>let stateTreeArrays = {</div>
+      <div>Michigan: ['Eastern White Pine', 'Oak'],</div>
+      <div>California: ['Coastal Redwood', 'Giant Sequoia'],</div>
+      <div>Wisconsin: ['Sugar Maple', 'Cottonwood'],</div>
+      <div>Minnesota: ['Birch', 'Red Pine']</div>
+      <div>}</div>
+      <div></div>
+      <br />
+      <div>for (let state in stateTreeArrays) {</div>
+      <div>let trees = stateTreeArrays[state]</div>
+      <div>// nested for loop</div>
+      <div>trees.forEach(function (tree, index) {</div>
+      <div>console.log(`Tree ${index+1} of ${state} is ${tree}`)</div>
+      <div>})</div>
+      <div>}</div>
+      <br />
+      <div>// and the Object.entries way</div>
+      <div>let treeArrayEntries = Object.entries(stateTreeArrays)</div>
+      <div>for (let [state, trees] of treeArrayEntries ) {</div>
+      <div>console.log(`The state trees of ${state} are ${trees}`)</div>
+      <div>}</div>
+      <br /><br /><br /><br /><br /><br />
+    </div>
+  </body>
+</html>
